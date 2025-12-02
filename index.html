@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Cafe DA HY — không gian & thức uống tinh tế. Thực đơn: cà phê, sinh tố, bánh ngọt, đồ ăn nhẹ." />
+  <title>Cafe DA HY</title>
+
+  <!-- font chu-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+
+  <!-- Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Local styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-custom" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" id="brand">Cafe DA HY</a>
+
+        <!-- toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Mở menu điều hướng"
+          id="nav-toggler"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="#headerCarousel">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-grid">Về chúng tôi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Thực đơn</a></li>
+            <li class="nav-item"><a class="nav-link" href="#store">Cửa hàng</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Carousel -->
+    <section id="headerCarousel" class="carousel slide header-carousel" data-bs-ride="carousel" aria-label="Hình ảnh quán">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/047/153/129/large_2x/modern-minimalist-coffee-shop-interior-design-with-free-photo.jpeg"
+            class="d-block w-100"
+            alt="Không gian quán cafe hiện đại với ánh sáng ấm"
+            width="1600" height="900"
+            loading="lazy" decoding="async"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://livingasean.com/wp-content/uploads/2023/07/008.jpg"
+            class="d-block w-100"
+            alt="khungcanhquan"
+            width="1600" height="900"
+            loading="lazy" decoding="async"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/1200x/fb/1a/bd/fb1abd544695ba287a2837701256a875.jpg"
+            class="d-block w-100"
+            alt="Bàn ghế gỗ trong quán cafe"
+            width="1600" height="900"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev" aria-label="Trước">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next" aria-label="Tiếp">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </section>
+
+    <!-- About -->
+    <section id="about-grid" class="container about-grid fade-in" aria-labelledby="about-heading">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start p-4">
+          <h2 id="about-heading" class="mb-4">Về Cafe DA HY</h2>
+          <p>
+            Ông chủ Da Hy là người mang trong mình niềm đam mê cà phê sâu sắc đến mức từng hạt, từng mùi, từng tầng vị đều được ông xem như một phần của cuộc đời mình. Là người lai Việt – Brazil, ông vẫn nhớ như in những buổi sáng tuổi thơ ở vùng trồng cà phê Brazil: cậu bé Da Hy lấm lem đất đỏ chạy theo bà con thu hái, được bà hướng dẫn cách nhận biết quả chín bằng mùi thơm và sắc đỏ đặc trưng. Chính khoảnh khắc ấy — khi cậu đặt tay lên sọt quả cà phê và ngửi thấy mùi đất ẩm hòa quyện cùng mùi trái chín — đã gieo vào cậu tình yêu bền bỉ với cà phê.
+
+Và cũng từ ký ức đó, ông đã xây dựng Cafe Da Hy theo đúng tinh thần mà cậu bé năm nào từng cảm nhận: một không gian rộng rãi, thoáng đãng như những nông trại trải dài ở Brazil; phong cách tối giản nhưng tinh tế, gợi lại sự mộc mạc của vùng đất đỏ; và nét độc đáo xuyên suốt từ cách rang xay đến thiết kế, giống như hành trình lai giữa hai nền văn hóa nhưng hòa quyện hoàn hảo trong một phong vị riêng biệt.
+          </p>
+        </div>
+        <div class="col-lg-6 position-relative">
+          <img src="https://i.pinimg.com/1200x/85/d7/9d/85d79d2e99bdea296260c8aeaa738e38.jpg"
+               alt="Ly cà phê trên bàn gỗ"
+               class="about-floating-img"
+               width="1200" height="800"
+               loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="container py-5" aria-labelledby="menu-heading">
+      <h2 id="menu-heading" class="text-center mb-5 fade-in">Thực Đơn Nổi Bật</h2>
+
+      <!-- 1. ca phe-->
+      <div class="menu-section fade-in mb-5" aria-labelledby="coffee-heading">
+        <h3 id="coffee-heading" class="mb-4 border-start ps-3 border-4">Cà Phê & Espresso</h3>
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Espresso, 28.000 đồng">
+              <img src="https://i.pinimg.com/736x/54/4c/05/544c05e2212a31de1158907f6f0fac0e.jpg" class="menu-thumb" alt="Espresso đậm" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Espresso</h5>
+              <span>28.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Americano, 30.000 đồng">
+              <img src="https://i.pinimg.com/1200x/cb/48/db/cb48db04009801523739569e0f33cfc3.jpg" class="menu-thumb" alt="Americano trong tách sứ" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Americano</h5>
+              <span>30.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Latte, 42.000 đồng">
+              <img src="https://i.pinimg.com/1200x/35/9f/c1/359fc15a59e47967f1e95305c7ae194e.jpg" class="menu-thumb" alt="Cốc latte với foam" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Latte</h5>
+              <span>42.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Cold Brew, 48.000 đồng">
+              <img src="https://i.pinimg.com/736x/28/b1/2c/28b12c44cd1c9b6068f2c668492e9cb8.jpg" class="menu-thumb" alt="Cold brew trong bình thủy tinh" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Cold Brew</h5>
+              <span>48.000đ</span>
+            </article>
+          </div>
+
+          <!-- cafe -->
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Mocha, 49.000 đồng">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="menu-thumb" alt="Cà phê mocha" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Mocha</h5>
+              <span>49.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Flat White, 44.000 đồng">
+              <img src="https://cubes-asia.com/storage/contents/blog/flat-white-la-gi.jpg" class="menu-thumb" alt="Flat white" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Flat White</h5>
+              <span>44.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Cà phê phin sữa đá, 35.000 đồng">
+              <img src="https://www.cubes-asia.com/storage/blogs/2023/ca-phe-sua-da.jpg" class="menu-thumb" alt="Cà phê phin sữa đá" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Phin Sữa Đá</h5>
+              <span>35.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Cà phê trứng, 55.000 đồng">
+              <img src="https://i.pinimg.com/736x/4b/b8/94/4bb894a2377a2f78db1405cf4b50bc90.jpg" class="menu-thumb" alt="Cà phê trứng truyền thống" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Cà Phê Trứng</h5>
+              <span>55.000đ</span>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. tra -->
+      <div class="menu-section fade-in mb-5" aria-labelledby="tea-heading">
+        <h3 id="tea-heading" class="mb-4 border-start ps-3 border-4">Trà & Nước Trái Cây</h3>
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Trà Oolong, 35.000 đồng">
+              <img src="https://i.pinimg.com/1200x/53/1c/c0/531cc06fd626fe34c20e4843fd3f7a35.jpg" class="menu-thumb" alt="Tách trà oolong" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Trà Oolong</h5>
+              <span>35.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Trà Đào Cam Sả, 45.000 đồng">
+              <img src="https://i.pinimg.com/1200x/88/99/f1/8899f1b4c1eeb304610eb4e7f5af4a85.jpg" class="menu-thumb" alt="Ly trà đào cam sả" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Trà Đào Cam Sả</h5>
+              <span>45.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Matcha Latte, 46.000 đồng">
+              <img src="https://i.pinimg.com/1200x/11/a5/bb/11a5bbd03076c6c77d8cc2ab15f65496.jpg" class="menu-thumb" alt="Matcha latte" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Matcha Latte</h5>
+              <span>46.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Sinh tố bơ (lớn), 55.000 đồng">
+              <img src="https://i.pinimg.com/1200x/f8/16/82/f81682ee5177f4782de3bfc506ab4f03.jpg" class="menu-thumb" alt="Sinh tố bơ tươi" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Sinh Tố Bơ</h5>
+              <span>55.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Sinh tố dâu, 52.000 đồng">
+              <img src="https://i.pinimg.com/1200x/69/cf/a6/69cfa6d82bda2dc58013888353b4a74b.jpg" class="menu-thumb" alt="Sinh tố dâu tây" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Sinh Tố Dâu</h5>
+              <span>52.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Nước ép cam tươi, 40.000 đồng">
+              <img src="https://i.pinimg.com/1200x/b5/15/19/b5151985c607f0f2c7695b46d5d95181.jpg" class="menu-thumb" alt="Ly nước ép cam" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Nước Ép Cam Tươi</h5>
+              <span>40.000đ</span>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. do uong -->
+      <div class="menu-section fade-in mb-5" aria-labelledby="special-heading">
+        <h3 id="special-heading" class="mb-4 border-start ps-3 border-4">Đồ Uống Đặc Biệt & Sữa</h3>
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Sữa tươi trân châu đường đen, 48.000 đồng">
+              <img src="https://i.pinimg.com/736x/ac/09/57/ac0957b8117a8e6b62f7348ccaeee5f6.jpg" class="menu-thumb" alt="Sữa tươi trân châu đường đen" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Sữa Tươi Trân Châu Đường Đen</h5>
+              <span>48.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Chocolate nóng, 40.000 đồng">
+              <img src="https://i.pinimg.com/736x/5f/49/64/5f49640ff8b2ddbfade6efb6bfa8aa2d.jpg" class="menu-thumb" alt="Ly chocolate nóng" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Chocolate Nóng</h5>
+              <span>40.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Milkshake vani, 45.000 đồng">
+              <img src="https://i.pinimg.com/1200x/44/3e/38/443e38840717efd8c6885b73b658886c.jpg" class="menu-thumb" alt="Milkshake vani" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Milkshake Vani</h5>
+              <span>45.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Soda chanh dây, 39.000 đồng">
+              <img src="https://i.pinimg.com/736x/17/91/67/179167dd76df23ba6855fcf3a665fc76.jpg" class="menu-thumb" alt="Ly soda chanh dây" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Soda Chanh Dây</h5>
+              <span>39.000đ</span>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. ĐỒ ĂN NHẸ & BÁNH -->
+      <div class="menu-section fade-in mb-5" aria-labelledby="food-heading">
+        <h3 id="food-heading" class="mb-4 border-start ps-3 border-4">Đồ Ăn Nhẹ & Bánh</h3>
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Tiramisu, 55.000 đồng">
+              <img src="https://i.pinimg.com/1200x/24/4f/38/244f38b0adf5e06f3136edc38df1c5e0.jpg" class="menu-thumb" alt="Tiramisu" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Tiramisu</h5>
+              <span>55.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Cheesecake, 58.000 đồng">
+              <img src="https://i.pinimg.com/736x/53/ff/e2/53ffe2ce6d416ba5dd9492580c4e8251.jpg" class="menu-thumb" alt="Cheesecake" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Cheesecake</h5>
+              <span>58.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Croissant bơ, 38.000 đồng">
+              <img src="https://i.pinimg.com/736x/a4/f2/2a/a4f22a19958d374bc127ebb080ae2080.jpg" class="menu-thumb" alt="Croissant bơ" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Croissant</h5>
+              <span>20.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Bánh mì kẹp gà, 72.000 đồng">
+              <img src="https://i.pinimg.com/736x/03/0e/4d/030e4d37372ed4689092e618c3165db5.jpg" class="menu-thumb" alt="Bánh mì kẹp gà" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Bánh Mì</h5>
+              <span>40.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Salad trái cây, 65.000 đồng">
+              <img src="https://i.pinimg.com/1200x/f6/62/1b/f6621b21ac3e4428f3232c3e8d81cd5d.jpg" class="menu-thumb" alt="Salad trái cây tươi" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Caesar Salady</h5>
+              <span>65.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Pasta kem nấm, 95.000 đồng">
+              <img src="https://i.pinimg.com/736x/41/30/75/413075b89786b11332352d7a47e44a0c.jpg" class="menu-thumb" alt="Pasta kem nấm" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Pasta Bolognaise</h5>
+              <span>55.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Bánh mì phô mai, 42.000 đồng">
+              <img src="https://i.pinimg.com/736x/3c/4d/e4/3c4de45ea703c085719fd85231511684.jpg" class="menu-thumb" alt="Bánh mì phô mai nướng" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Bánh Mì Phô Mai</h5>
+              <span>40.000đ</span>
+            </article>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <article class="menu-item-card" tabindex="0" aria-label="Brownie socola, 48.000 đồng">
+              <img src="https://i.pinimg.com/1200x/ff/06/dd/ff06dd0eec7c679300bd7616f2fa6cb7.jpg" class="menu-thumb" alt="Brownie socola" width="600" height="600" loading="lazy" decoding="async">
+              <h5>Brownie Socola</h5>
+              <span>45.000đ</span>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- cuahang -->
+    <section id="store" class="container store-section py-5 fade-in" aria-labelledby="store-heading">
+      <h2 id="store-heading" class="text-center mb-5">Hệ Thống Cửa Hàng</h2>
+
+      <div class="chess-grid" role="list">
+        <div class="cell cell-info" role="listitem">
+          <h3>Cơ sở 1: Quận 1</h3>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 đường Trà Sữa, P. Bến Nghé, Quận 1, TP.HCM</p>
+        </div>
+
+        <div class="cell cell-img" role="listitem">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8" alt="Không gian quán Quận 1" loading="lazy" width="1200" height="800" decoding="async">
+        </div>
+
+        <div class="cell cell-img" role="listitem">
+          <img src="https://texascoffeeschool.com/wp-content/uploads/2021/10/DSC_0052-scaled.jpg" alt="Không gian quán Quận 3" loading="lazy" width="1200" height="800" decoding="async">
+        </div>
+
+        <div class="cell cell-info" role="listitem">
+          <h3>Cơ sở 2: Quận 3</h3>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 456 đường Machiato, P. Võ Thị Sáu, Quận 3, TP.HCM</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessible popup dialog ) -->
+    <div id="about-popup" class="about-popup" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="about-popup-title" tabindex="-1">
+      <div class="popup-content" role="document">
+        <div class="popup-left">
+          <img src="https://images.unsplash.com/photo-1507133750069-bef72f3707a9" alt="Cà phê đặc trưng DA HY" width="800" height="600" loading="lazy" decoding="async">
+        </div>
+        <div class="popup-right">
+          <h2 id="about-popup-title">Câu chuyện của DA HY</h2>
+          <div id="popup-text-body" class="popup-body" tabindex="0"></div>
+          <div class="mt-3 d-flex gap-2">
+            <button id="close-popup" class="btn btn-dark">Đóng</button>
+            <a href="#menu" class="btn btn-outline-primary">Xem thực đơn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="contact" class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 Cafe DA HY. All rights reserved.</p>
+    <p class="mb-0">Liên lạc: 0961705605</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
+
+  <!-- Local JS (deferred behavior implemented) -->
+  <script src="main.js" defer></script>
+</body>
+</html>
